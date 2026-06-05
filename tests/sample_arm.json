@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "resources": [
+    {
+      "type": "Microsoft.KeyVault/vaults",
+      "name": "kv-vulnerable",
+      "properties": {
+        "enableSoftDelete": true,
+        "enablePurgeProtection": false
+      }
+    },
+    {
+      "type": "Microsoft.KeyVault/vaults",
+      "name": "kv-secure",
+      "properties": {
+        "enableSoftDelete": true,
+        "enablePurgeProtection": true
+      }
+    },
+    {
+      "type": "Microsoft.Network/networkSecurityGroups",
+      "name": "nsg-open",
+      "properties": {
+        "securityRules": [
+          {
+            "name": "allow-all-ssh",
+            "properties": {
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "destinationPortRange": "22",
+              "protocol": "Tcp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "name": "stgpublic",
+      "properties": {
+        "allowBlobPublicAccess": true
+      }
+    },
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "name": "stgsecure",
+      "properties": {
+        "allowBlobPublicAccess": false
+      }
+    },
+    {
+      "type": "Microsoft.Web/sites",
+      "name": "webapp-no-https",
+      "properties": {
+        "httpsOnly": false
+      }
+    },
+    {
+      "type": "Microsoft.Web/sites",
+      "name": "webapp-secure",
+      "properties": {
+        "httpsOnly": true
+      }
+    }
+  ]
+}

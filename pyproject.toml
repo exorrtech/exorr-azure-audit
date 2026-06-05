@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exorr-azure-audit"
+version = "1.0.0"
+description = "EXORR Azure Audit — Azure/Entra ID security misconfiguration scanner"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "EXORR Security", email = "exorrnull@gmail.com"}]
+keywords = ["azure", "security", "audit", "entra-id", "misconfiguration", "cloud-security"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.scripts]
+exorr-azure-audit = "exorr_azure_audit.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov"]
+
+[tool.setuptools.packages.find]
+include = ["exorr_azure_audit*"]
