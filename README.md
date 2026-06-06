@@ -3,6 +3,7 @@
 ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 ![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-orange.svg)
+[![CI](https://github.com/exorrtech/exorr-azure-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/exorrtech/exorr-azure-audit/actions/workflows/ci.yml)
 
 **Azure & Entra ID security misconfiguration scanner** — detect dangerous defaults before attackers do.
 
