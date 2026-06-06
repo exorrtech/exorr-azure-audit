@@ -144,4 +144,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-*Walk with the void. **EXORR Security***
+*Walk with the void. **∅ EXORR***

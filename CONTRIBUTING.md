@@ -21,4 +21,4 @@ Thanks for your interest!
 Do NOT report via GitHub issues. Email exorrnull@gmail.com instead.
 
 --
-EXORR Security · The void has no surface to attack.
+∅ EXORR · The void has no surface to attack.
