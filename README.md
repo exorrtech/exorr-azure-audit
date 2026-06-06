@@ -22,6 +22,12 @@ EXORR Azure Audit scans your Azure subscriptions and Entra ID tenants for common
 
 ---
 
+## Tech Stack
+
+`Python 3.9+` `CLI` `JSON/Markdown/HTML Reporting`
+
+---
+
 ## Installation
 
 ```bash
