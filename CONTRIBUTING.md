@@ -18,7 +18,7 @@ Thanks for your interest!
 
 ## Security Vulnerabilities
 
-Do NOT report via GitHub issues. Email exorrnull@gmail.com instead.
+Do NOT report via GitHub issues. Email ops@exorr.tech instead.
 
 --
 ∅ EXORR · The void has no surface to attack.

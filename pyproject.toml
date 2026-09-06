@@ -9,7 +9,7 @@ description = "EXORR Azure Audit — Azure/Entra ID security misconfiguration sc
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
-authors = [{name = "EXORR Security", email = "exorrnull@gmail.com"}]
+authors = [{name = "EXORR Security", email = "ops@exorr.tech"}]
 keywords = ["azure", "security", "audit", "entra-id", "misconfiguration", "cloud-security"]
 classifiers = [
     "Development Status :: 4 - Beta",
